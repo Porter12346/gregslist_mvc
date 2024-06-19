@@ -4,17 +4,42 @@
             <h1 class="text-center">Houses For Sale</h1>
         </div>
         <div class="col-12">
-            <form action="">
-                form tbd
+            <form onsubmit="app.HousesController.createHouse()">
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="price" min="0" max="5000000">
+                </div>
+                <div class="mb-3">
+                    <label for="year" class="form-label">Year Built</label>
+                    <input type="number" class="form-control" id="year" min="1800" max="2024">
+                </div>
+                <div class="d-flex">
+                    <div class="mb-3 flex-grow-1">
+                        <label for="bedrooms" class="form-label">Bedrooms</label>
+                        <input type="number" class="form-control" id="bedrooms" min="1" max="100">
+                    </div>
+                    <div class="mb-3 ms-5 flex-grow-1">
+                        <label for="bathrooms" class="form-label">Bathrooms</label>
+                        <input type="number" class="form-control" id="bathrooms" min="1" max="100">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="sqft" class="form-label">Property Size</label>
+                    <input type="number" class="form-control" id="sqft" min="0" max="10000">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
             </form>
         </div>
         <!-- this.id = generateId()
-            this.year = houseData.year
-            this.bedrooms = houseData.bedrooms/
-            this.bathrooms = houseData.bathrooms/
-            this.sqft = houseData.sqft/
-            this.price = houseData.price/
-            this.description = houseData.description
+            this.year = houseData.year/\
+            this.bedrooms = houseData.bedrooms/\
+            this.bathrooms = houseData.bathrooms/\
+            this.sqft = houseData.sqft/\
+            this.price = houseData.price/\
+            this.description = houseData.description/
             this.imgUrl = houseData.imgUrl -->
         <div class="row" id="houseCardSection">
 

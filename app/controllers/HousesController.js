@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { getFormData } from "../utils/FormHandler.js";
 import { setHTML } from "../utils/Writer.js";
 
 export class HousesController {
@@ -15,5 +16,15 @@ export class HousesController {
             HTMLInject += house.HTMLTemplate
         });
         setHTML('houseCardSection', HTMLInject)
+    }
+
+    createHouse() {
+        event.preventDefault()
+        const form = event.target
+        const houseData = getFormData(form)
+        housesService.createCar(houseData)
+        // @ts-ignore
+        form.reset()
+
     }
 }
