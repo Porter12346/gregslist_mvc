@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from './models/House.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -63,6 +64,14 @@ class ObservableAppState extends EventEmitter {
       description: 'RIP in the jalopy jungle',
       color: '#8c9197'
     }),
+  ]
+
+
+  /**
+   * @type {House[]}
+   */
+  houses = [
+    new House(10, 10, 'https://images.unsplash.com/photo-1628624747186-a941c476b7ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
   ]
 }
 

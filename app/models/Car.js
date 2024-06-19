@@ -2,7 +2,7 @@ import { generateId } from "../utils/GenerateId.js"
 
 export class Car {
   /**
-   * @param {{ make: string; model: string; year: number; imgURL: string; mileage: number; price: number; color: string; description: string; runs: boolean; fuelType: string; hasCleanTitle: boolean; dateListed: string }} data
+   * @param {{ make: string; model: string; year: number; imgURL: string; mileage: number; price: number; color: string; description: string; runs: boolean; fuelType: string; hasCleanTitle: boolean; dateListed? }} data
    */
   constructor(data) {
     this.id = generateId()
