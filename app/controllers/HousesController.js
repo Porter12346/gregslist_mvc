@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { housesService } from "../services/HousesService.js";
 import { getFormData } from "../utils/FormHandler.js";
 import { setHTML } from "../utils/Writer.js";
 
@@ -22,7 +23,7 @@ export class HousesController {
         event.preventDefault()
         const form = event.target
         const houseData = getFormData(form)
-        housesService.createCar(houseData)
+        housesService.createHouse(houseData)
         // @ts-ignore
         form.reset()
 

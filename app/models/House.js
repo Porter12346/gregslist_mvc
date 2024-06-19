@@ -17,7 +17,7 @@ export class House {
         /*HTML*/
         return (`<div class="col-12 col-md-4">
             <div class="mb-2 bg-secondary border border-dark border-3 p-0 shadow text-center rounded">
-            <img src="${this.imgURL}"
+            <img src=${this.imgURL}
                 alt="House :D" class="img-fluid rounded">
             <h1>$${this.price}</h1>
             <h2>${this.bedrooms} bedroom, ${this.bathrooms} bath</h2>
