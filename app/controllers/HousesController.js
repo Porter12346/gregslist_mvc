@@ -20,6 +20,7 @@ export class HousesController {
     }
 
     createHouse() {
+        debugger
         event.preventDefault()
         const form = event.target
         const houseData = getFormData(form)
